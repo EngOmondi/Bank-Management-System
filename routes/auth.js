@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   }
 });
 
-/* Proccess Login */
+
 router.post('/', function(req, res, next) {
   var email = req.body.email;
   var pass = req.body.password;

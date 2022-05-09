@@ -7,7 +7,6 @@ router.get('/', function(req, res, next) {
   res.render('api', { title: 'API' });
 });
 
-/* Get all users. */
 router.get('/users', function(req, res, next) {
   var query = User.find();
   query.select('name card money');
